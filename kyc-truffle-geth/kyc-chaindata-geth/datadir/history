@@ -1,7 +1,0 @@
-eth.coinbase
-eth.accounts
-pesonal.newAccount('bank1')
-eth.accounts
-eth.coinbase
-miner.start()
-miner.stop()
