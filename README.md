@@ -9,7 +9,7 @@
 * The banks can register complaint against another bank if they find the bank to be curropt or if it is verifying false customers.
 * If the number of complaints against a bank are more than one third of the total number of banks, then the bank is banned from executing bank functionalities such as adding KYC request, approving customer, upvote or downvote.
 #### 3. Running the project on remix ide:
-* The kyc-remix directory contains two solidity files namely BankInterface.sol (contains BankApp contract) and KYC.sol (contains the AdminApp contract, which is inheriting from the BankApp contract after importing the BankInterface.sol inside KYC.sol).
+* The _kyc-remix_ directory contains two solidity files namely BankInterface.sol (contains BankApp contract) and KYC.sol (contains the AdminApp contract, which is inheriting from the BankApp contract after importing the BankInterface.sol inside KYC.sol).
 * Copy these two .sol files in the remix ide and compile them.
 * Deploy AdminApp contract from any of the account provided in remix. This account will be assigned as admin at the time of deployment.
 * Then, all the functions will be available in a nice GUI on left hand side, which can be called by passing in the required arguments.
@@ -20,3 +20,4 @@
 (Assumption- The bank has verified the KYC data off-chain and is now adding it to the customers database (mapping) by passing in the required arguments and setting kycStatus as true and upvotes initialized by 1).
 * After this, viewCustomer() may be called to see if the customer has been added correctly.
 * You may try out other functions in the same manner as per contract flow.
+#### 4. Instructions for starting a private chain on local geth node and deploying the contract after initializing the truffle project are included in the _kyc-truffle-geth_ directory. 
